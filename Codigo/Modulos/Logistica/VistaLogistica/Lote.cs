@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ControladorLogistica;
 
 namespace VistaLogistica
 {
@@ -16,6 +17,35 @@ namespace VistaLogistica
         {
             InitializeComponent();
         }
+
+        Controlador cn = new Controlador();
+        string table = "tbl_lote";
+
+
+
+        public void getIds()
+        {
+            try
+            {
+                string dato;
+                dato = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                if (textBox5.Text == "")
+                {
+                    textBox5.Text = dato;
+                }
+                else
+                {
+                    string valor = textBox5.Text;
+                    textBox5.Text = valor + "," + dato;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message.ToString() + " \nError en obtener las aplicaciones del perfil");
+            }
+        }
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -29,14 +59,53 @@ namespace VistaLogistica
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-            NavegadorVista.Navegador.idApp = "2102";
-            TextBox[] Grupotextbox = { txtBuscar, txtIdProducto, txtCantidad };
-            TextBox[] Idtextbox = { txtBuscar, txtIdProducto, txtCantidad };
-            navegador1.textbox = Grupotextbox;
-            navegador1.tabla = dtglote;
-            navegador1.textboxi = Idtextbox;
-            navegador1.actual = this;
-            navegador1.cargar(dtglote, Grupotextbox, "bd_logistica");
+           
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            getIds();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            //cont = 2;
+            // dataGridView1.Columns.Clear();
+            cn.producto(dataGridView2.Tag.ToString(), dataGridView2);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            char[] delimiterChars = { ',' };
+            string text = textBox5.Text;
+            string[] words = text.Split(delimiterChars);
+
+            foreach (var word in words)
+            {
+                textBox3.Text = word;
+                TextBox[] textbox = { textBox6, textBox3, textBox4 };
+                cn.ingresar(textbox, table);
+            }
+            string message = "Registro Guardado";
+            //actualizardatagriew();
+
+            MessageBox.Show(message);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cn.llenartablaa(dataGridView1.Tag.ToString(), dataGridView1);
         }
     }
 }

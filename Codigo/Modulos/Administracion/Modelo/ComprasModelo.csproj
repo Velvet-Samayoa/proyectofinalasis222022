@@ -52,6 +52,11 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sentencias.cs" />
+    <Compile Include="SentenciasC.cs" />
+    <Compile Include="SentenciasF.cs" />
+    <Compile Include="SentenciasJ.cs" />
+    <Compile Include="SentenciasR.cs" />
+    <Compile Include="Sentenciast.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

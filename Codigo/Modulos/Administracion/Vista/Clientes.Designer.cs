@@ -45,15 +45,15 @@ namespace ComprasVista
             this.label7 = new System.Windows.Forms.Label();
             this.TxtNit = new System.Windows.Forms.TextBox();
             this.navegador1 = new NavegadorVista.Navegador();
-            this.TxtEstado = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TxtEstado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(510, 310);
+            this.txtcorreo.Location = new System.Drawing.Point(516, 310);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(123, 20);
             this.txtcorreo.TabIndex = 21;
@@ -61,7 +61,7 @@ namespace ComprasVista
             // 
             // txttelefono
             // 
-            this.txttelefono.Location = new System.Drawing.Point(510, 276);
+            this.txttelefono.Location = new System.Drawing.Point(516, 276);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(123, 20);
             this.txttelefono.TabIndex = 20;
@@ -69,7 +69,7 @@ namespace ComprasVista
             // 
             // txtdomicilio
             // 
-            this.txtdomicilio.Location = new System.Drawing.Point(207, 317);
+            this.txtdomicilio.Location = new System.Drawing.Point(207, 310);
             this.txtdomicilio.Name = "txtdomicilio";
             this.txtdomicilio.Size = new System.Drawing.Size(200, 20);
             this.txtdomicilio.TabIndex = 19;
@@ -103,7 +103,7 @@ namespace ComprasVista
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(455, 313);
+            this.label5.Location = new System.Drawing.Point(455, 310);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 15;
@@ -112,7 +112,7 @@ namespace ComprasVista
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(455, 279);
+            this.label4.Location = new System.Drawing.Point(455, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 14;
@@ -121,7 +121,7 @@ namespace ComprasVista
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(152, 320);
+            this.label3.Location = new System.Drawing.Point(152, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 13;
@@ -139,7 +139,7 @@ namespace ComprasVista
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(152, 244);
+            this.label1.Location = new System.Drawing.Point(152, 237);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 11;
@@ -148,7 +148,7 @@ namespace ComprasVista
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(279, 240);
+            this.label6.Location = new System.Drawing.Point(279, 237);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 13);
             this.label6.TabIndex = 22;
@@ -165,7 +165,7 @@ namespace ComprasVista
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(455, 240);
+            this.label7.Location = new System.Drawing.Point(455, 237);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(20, 13);
             this.label7.TabIndex = 24;
@@ -173,28 +173,28 @@ namespace ComprasVista
             // 
             // TxtNit
             // 
-            this.TxtNit.Location = new System.Drawing.Point(481, 237);
+            this.TxtNit.Location = new System.Drawing.Point(516, 237);
             this.TxtNit.Name = "TxtNit";
-            this.TxtNit.Size = new System.Drawing.Size(117, 20);
+            this.TxtNit.Size = new System.Drawing.Size(123, 20);
             this.TxtNit.TabIndex = 25;
             this.TxtNit.Tag = "Nit_Clientes";
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(169, 12);
+            this.navegador1.Location = new System.Drawing.Point(141, 12);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(574, 152);
             this.navegador1.TabIndex = 26;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load_1);
+            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
-            // TxtEstado
+            // label8
             // 
-            this.TxtEstado.Location = new System.Drawing.Point(539, 343);
-            this.TxtEstado.Name = "TxtEstado";
-            this.TxtEstado.Size = new System.Drawing.Size(100, 20);
-            this.TxtEstado.TabIndex = 32;
-            this.TxtEstado.Tag = "status_Cliente";
-            this.TxtEstado.Visible = false;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(154, 343);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Estatus";
             // 
             // comboBox1
             // 
@@ -205,17 +205,17 @@ namespace ComprasVista
             this.comboBox1.Location = new System.Drawing.Point(207, 343);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 31;
+            this.comboBox1.TabIndex = 28;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label8
+            // TxtEstado
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(154, 343);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Estatus";
+            this.TxtEstado.Location = new System.Drawing.Point(539, 343);
+            this.TxtEstado.Name = "TxtEstado";
+            this.TxtEstado.Size = new System.Drawing.Size(100, 20);
+            this.TxtEstado.TabIndex = 29;
+            this.TxtEstado.Tag = "status_Cliente";
+            this.TxtEstado.Visible = false;
             // 
             // Clientes
             // 
@@ -267,8 +267,8 @@ namespace ComprasVista
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TxtNit;
         private NavegadorVista.Navegador navegador1;
-        private System.Windows.Forms.TextBox TxtEstado;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox TxtEstado;
     }
 }

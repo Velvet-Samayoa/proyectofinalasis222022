@@ -195,7 +195,11 @@ namespace VistaLogistica
 
         private void btseguridadsegundo_Click(object sender, EventArgs e)
         {
-
+            Vista_Seguridad.Cambio b = new Vista_Seguridad.Cambio();
+            b.MdiParent = this;
+            b.Show();
+            hideSubMenu();
+            pictureBox2.Visible = false;
         }
 
         private void btrayuda_Click(object sender, EventArgs e)

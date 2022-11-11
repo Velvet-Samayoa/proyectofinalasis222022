@@ -371,5 +371,30 @@ linea_DetalleReservacionPedido int,
 foreign key (Pk_Reserva) references tblEncabezadoReservacionPedido(PkId_Reserva)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- George Mayén, Jason Ortega, Cristian Jocol
+create table tblMoraClientes(
+PkId_MoraClientes int,
+FkId_Clientes int,
+FkId_VentasEncabezado int,
+FkId_CajaClientes int,
+TotalMora_MoraCliente float,
+primary key(PkId_MoraClientes),
+foreign key (FkId_Clientes) references tblClientes(PkId_Clientes),
+foreign key (FkId_VentasEncabezado) references tblventasencabezado(PkId_VentasEncabezado),
+foreign key (FkId_CajaClientes) references tblcajaclientes(PkId_CajaClientes)
+)ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
+
+-- George Mayén, Jason Ortega, Cristian Jocol
+create table tblMoraProveedores(
+PkId_MoraProveedores int,
+FkId_Proveedores int,
+FkId_cajaProveedores int,
+FkId_detalleordencompra int,
+TotalMora_MoraProveedores float,
+primary key(PkId_MoraProveedores),
+foreign key (FkId_Proveedores) references tblProveedores(PkId_Proveedores),
+foreign key (FkId_cajaProveedores) references tblcajaProveedores(PkId_cajaProveedores),
+foreign key (FkId_detalleordencompra) references tbldetalleordencompra(PkId_EncabezadoOrdenCompra)
+)ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
 
 

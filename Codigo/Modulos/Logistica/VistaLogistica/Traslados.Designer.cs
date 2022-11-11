@@ -29,180 +29,317 @@ namespace VistaLogistica
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new NavegadorVista.Navegador();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxtCodigo = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtBodegaS = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtBodegaE = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.TxtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtProd = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.DtgTraslados = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtIdProducto = new System.Windows.Forms.TextBox();
+            this.txtIdBodega = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTraslados)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(12, 12);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(574, 152);
-            this.navegador1.TabIndex = 74;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.TxtCantidad);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.TxtProd);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.TxtBodegaE);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.TxtBodegaS);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.TxtCantidad);
+            this.groupBox1.Controls.Add(this.txtIdProducto);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.TxtCodigo);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(77, 170);
+            this.groupBox1.Controls.Add(this.txtIdBodega);
+            this.groupBox1.Location = new System.Drawing.Point(16, 69);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(430, 223);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(677, 274);
             this.groupBox1.TabIndex = 75;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
-            // TxtCodigo
-            // 
-            this.TxtCodigo.Location = new System.Drawing.Point(123, 48);
-            this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(170, 20);
-            this.TxtCodigo.TabIndex = 56;
-            this.TxtCodigo.Tag = "pk_codigo_traslado";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(146, 27);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 18);
-            this.label7.TabIndex = 55;
-            this.label7.Text = "Codigo Traslado";
-            // 
-            // TxtBodegaS
-            // 
-            this.TxtBodegaS.Location = new System.Drawing.Point(15, 106);
-            this.TxtBodegaS.Name = "TxtBodegaS";
-            this.TxtBodegaS.Size = new System.Drawing.Size(170, 20);
-            this.TxtBodegaS.TabIndex = 58;
-            this.TxtBodegaS.Tag = "fk_bodega_entrada";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 18);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Bodega Salida";
-            // 
-            // TxtBodegaE
-            // 
-            this.TxtBodegaE.Location = new System.Drawing.Point(209, 106);
-            this.TxtBodegaE.Name = "TxtBodegaE";
-            this.TxtBodegaE.Size = new System.Drawing.Size(170, 20);
-            this.TxtBodegaE.TabIndex = 60;
-            this.TxtBodegaE.Tag = "fk_bodega_salida";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(230, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 18);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Bodega Entrada";
-            // 
             // TxtCantidad
             // 
-            this.TxtCantidad.Location = new System.Drawing.Point(209, 173);
+            this.TxtCantidad.Location = new System.Drawing.Point(398, 204);
+            this.TxtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtCantidad.Name = "TxtCantidad";
-            this.TxtCantidad.Size = new System.Drawing.Size(170, 20);
+            this.TxtCantidad.Size = new System.Drawing.Size(225, 22);
             this.TxtCantidad.TabIndex = 64;
-            this.TxtCantidad.Tag = "cantidad";
+            this.TxtCantidad.Tag = "cantidad_producto";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(255, 152);
+            this.label3.Location = new System.Drawing.Point(488, 173);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
+            this.label3.Size = new System.Drawing.Size(84, 24);
             this.label3.TabIndex = 63;
             this.label3.Text = "Cantidad";
             // 
-            // TxtProd
+            // label1
             // 
-            this.TxtProd.Location = new System.Drawing.Point(15, 173);
-            this.TxtProd.Name = "TxtProd";
-            this.TxtProd.Size = new System.Drawing.Size(170, 20);
-            this.TxtProd.TabIndex = 62;
-            this.TxtProd.Tag = "fk_codigo_producto";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(68, 152);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 18);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Producto";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(149, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 24);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Bodega Salida";
             // 
             // DtgTraslados
             // 
             this.DtgTraslados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgTraslados.Location = new System.Drawing.Point(12, 408);
+            this.DtgTraslados.Location = new System.Drawing.Point(16, 351);
+            this.DtgTraslados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DtgTraslados.Name = "DtgTraslados";
-            this.DtgTraslados.Size = new System.Drawing.Size(574, 235);
+            this.DtgTraslados.RowHeadersWidth = 51;
+            this.DtgTraslados.Size = new System.Drawing.Size(590, 289);
             this.DtgTraslados.TabIndex = 76;
             this.DtgTraslados.Tag = "tbl_traslados";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(613, 460);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 38);
+            this.button4.TabIndex = 85;
+            this.button4.Text = "Visualizar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(613, 375);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 38);
+            this.button1.TabIndex = 84;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(328, 201);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(33, 22);
+            this.textBox1.TabIndex = 83;
+            this.textBox1.Tag = "fk_codigo_producto";
+            this.textBox1.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(26, 128);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(33, 30);
+            this.button3.TabIndex = 82;
+            this.button3.Text = "?";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(29, 196);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(33, 30);
+            this.button2.TabIndex = 81;
+            this.button2.Text = "?";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtIdProducto
+            // 
+            this.txtIdProducto.Location = new System.Drawing.Point(81, 201);
+            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdProducto.Name = "txtIdProducto";
+            this.txtIdProducto.Size = new System.Drawing.Size(239, 22);
+            this.txtIdProducto.TabIndex = 80;
+            this.txtIdProducto.Tag = "";
+            // 
+            // txtIdBodega
+            // 
+            this.txtIdBodega.Location = new System.Drawing.Point(81, 133);
+            this.txtIdBodega.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdBodega.Name = "txtIdBodega";
+            this.txtIdBodega.Size = new System.Drawing.Size(239, 22);
+            this.txtIdBodega.TabIndex = 79;
+            this.txtIdBodega.Tag = "fk_bodega_salida";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(137, 172);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 25);
+            this.label5.TabIndex = 78;
+            this.label5.Text = "Producto";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(345, 128);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(33, 30);
+            this.button5.TabIndex = 84;
+            this.button5.Text = "?";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(386, 133);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(237, 22);
+            this.textBox2.TabIndex = 83;
+            this.textBox2.Tag = "fk_bodega_entrada";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(459, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 24);
+            this.label2.TabIndex = 85;
+            this.label2.Text = "Bodega Entrada";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(271, 10);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(235, 55);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "Traslados";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView3);
+            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Location = new System.Drawing.Point(700, 69);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(446, 579);
+            this.panel1.TabIndex = 87;
+            this.panel1.Visible = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 391);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(450, 170);
+            this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.Tag = "tbl_producto";
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 13);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(435, 167);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.Tag = "tbl_bodega";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(6, 204);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(435, 168);
+            this.dataGridView3.TabIndex = 2;
+            this.dataGridView3.Tag = "tbl_bodega";
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            // 
             // Traslados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 655);
+            this.ClientSize = new System.Drawing.Size(1147, 660);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.DtgTraslados);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.navegador1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Traslados";
             this.Text = "Traslados";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgTraslados)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private NavegadorVista.Navegador navegador1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox TxtCantidad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtProd;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtBodegaE;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtBodegaS;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtCodigo;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView DtgTraslados;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtIdProducto;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtIdBodega;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }

@@ -7,12 +7,12 @@ using System.Data.Odbc;
 
 namespace ModeloLogistica
 {
-    class Conexion
+    public class Conexion
     {
         public OdbcConnection conexion()
         {
 
-            OdbcConnection conn = new OdbcConnection("Dsn=prueba");
+            OdbcConnection conn = new OdbcConnection("Dsn=colchoneria");
             try
             {
                 conn.Open();

@@ -21,5 +21,11 @@ namespace VistaLogistica
         {
             this.Close();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            ReporteInventario b = new ReporteInventario();
+            b.Show();
+        }
     }
 }

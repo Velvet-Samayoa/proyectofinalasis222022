@@ -1,0 +1,18 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=ayudast.chm
+Contents file=ayudat.hhc
+Default Window=ayudaRabbit
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+ayudaRabbit="Ayudas","ayudat.hhc",,,,"AyudaPedido.html","AyudaPedido","AyudaVenta.html","AyudaVenta",0x23520,,0xc387e,,,,,,,,0
+
+
+[FILES]
+AyudaPedido.html
+AyudaVenta.html
+
+[INFOTYPES]
+

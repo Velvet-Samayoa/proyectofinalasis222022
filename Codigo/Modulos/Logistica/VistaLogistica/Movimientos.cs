@@ -21,5 +21,11 @@ namespace VistaLogistica
         {
             this.Close();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            ReporteriaMovimientos b = new ReporteriaMovimientos();
+            b.Show();
+        }
     }
 }
