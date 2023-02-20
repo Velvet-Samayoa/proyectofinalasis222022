@@ -47,3 +47,30 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+DELIMITER $$
+USE `colchoneria`$$
+CREATE PROCEDURE `pa_recetas_agregareditar` (
+_pk_idrecetas_tbl_recetas INT,
+_producto_tbl_recetas varchar(45),
+_nombre_material_tbl_recetas varchar(100),
+_cantidad_tbl_recetas varchar(100),
+_medida_tbl_recetas varchar(45)
+)
+BEGIN
+if _pk_idrecetas_tbl_recetas = 0 then
+    insert into tbl_recetas (producto_tbl_recetas,nombre_material_tbl_recetas,cantidad_tbl_recetas,medida_tbl_recetas)
+    values (_producto_tbl_recetas,_nombre_material_tbl_recetas,_cantidad_tbl_recetas,_medida_tbl_recetas);
+else
+    update tbl_recetas
+    set
+        producto_tbl_recetas = _producto_tbl_recetas,
+        nombre_material_tbl_recetas = _nombre_material_tbl_recetas,
+        cantidad_tbl_recetas = _cantidad_tbl_recetas,
+        medida_tbl_recetas = _medida_tbl_recetas
+        where pk_idrecetas_tbl_recetas = _pk_idrecetas_tbl_recetas;
+end if;
+
+END$$
+
+DELIMITER ;

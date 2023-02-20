@@ -1,6 +1,5 @@
 USE `colchoneria`;
-alter table tbl_usuarios add pregunta varchar(50) not null;
-alter table tbl_usuarios add respuesta varchar(50) not null;
+
 
 -- STORE PROCEDURES
 /** Reporteador **/
@@ -65,4 +64,21 @@ else
 end if;
 END ;;
 DELIMITER ;
+
+-- BANCOS
+ALTER TABLE `colchoneria`.`tbl_cuentasbancos` DROP COLUMN `saldoI_montbancario`;
+
+ALTER TABLE `colchoneria`.`tbl_movimientos_bancos` 
+CHANGE COLUMN `Pk_idMovimientos` `Pk_idMovimientos` INT NOT NULL AUTO_INCREMENT ;
+
+-- ADMINISTRACION
+alter table tblcotizaciones add constraint fk2_codigo_producto foreign key (fk_codigo_producto ) references tbl_producto(pk_codigo_producto );
+ALTER TABLE `tbldetalleventa` DROP FOREIGN KEY `tbldetalleventa_ibfk_1`;
+ALTER TABLE `tbldetalleventa` DROP COLUMN PkId_DetalleVenta;
+
+-- LOGISTICA
+alter table tbl_producto add column medida_producto float(100,2);
+alter table tbl_producto modify medida_producto varchar(100);
+alter table tbl_envio modify fecha_entrega varchar(100);
+alter table tbl_envio add primary key (pk_envio);
 

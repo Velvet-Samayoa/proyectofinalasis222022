@@ -164,3 +164,9 @@ FOREIGN KEY (`fk_dNominasConexion`) REFERENCES `tbl_detalleNominas` (`pk_id_nomi
 
 
 
+
+
+
+
+
+
